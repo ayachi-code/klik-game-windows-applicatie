@@ -127,6 +127,8 @@
             this.Controls.Add(this.normaal);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "klik game";
             this.ResumeLayout(false);
             this.PerformLayout();
