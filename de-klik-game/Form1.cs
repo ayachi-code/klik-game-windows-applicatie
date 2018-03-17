@@ -28,6 +28,7 @@ namespace de_klik_game
             String normaal_klik_nieuwe_waarden = normaal_klik_getal.ToString();
             //Super getal
             String super_klik = super.Text;
+            int super_klik_waardeb = Int32.Parse(super_klik);
          
             if (normaal_klik_getal >= 10)
             {
