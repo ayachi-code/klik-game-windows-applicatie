@@ -24,8 +24,17 @@ namespace de_klik_game
             int normaal_klik_getal = Int32.Parse(normaal_klik);
             normaal_klik_getal += 1;
             String normaal_klik_nieuwe_waarden = normaal_klik_getal.ToString();
-            normaal.Text = normaal_klik_nieuwe_waarden;
-           
+            if (normaal_klik_getal >= 10)
+            {
+                //Een super punt en reset de normaal_waarde naar nul
+                normaal_klik_getal = 0;
+                normaal.Text = normaal_klik_getal.ToString();
+            } else
+            {
+                //Als er niks aan de hand is voer dan een punt bij normaal
+                normaal.Text = normaal_klik_nieuwe_waarden;
+            }
+            
         }
     }
 }
