@@ -20,15 +20,24 @@ namespace de_klik_game
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            //Normaal getal
             String normaal_klik = normaal.Text;
             int normaal_klik_getal = Int32.Parse(normaal_klik);
             normaal_klik_getal += 1;
             String normaal_klik_nieuwe_waarden = normaal_klik_getal.ToString();
+            //Super getal
+            String super_klik = super.Text;
+         
             if (normaal_klik_getal >= 10)
             {
                 //Een super punt en reset de normaal_waarde naar nul
+                //Hier word het gerest
                 normaal_klik_getal = 0;
                 normaal.Text = normaal_klik_getal.ToString();
+                //Voeg een punt bij
+
+
             } else
             {
                 //Als er niks aan de hand is voer dan een punt bij normaal
