@@ -23,6 +23,7 @@ namespace de_klik_game
             String normaal_klik = normaal.Text;
             int normaal_klik_getal = Int32.Parse(normaal_klik);
             normaal_klik_getal += 1;
+            String normaal_klik_nieuwe_waarden = normaal_klik_getal.ToString();
            
         }
     }
