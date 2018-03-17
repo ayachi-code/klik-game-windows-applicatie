@@ -16,5 +16,10 @@ namespace de_klik_game
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
