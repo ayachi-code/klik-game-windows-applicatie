@@ -29,9 +29,9 @@ namespace de_klik_game
             //Super getal
             String super_klik = super.Text;
             int super_klik_waarden = Int32.Parse(super_klik);
-            super_klik_waarden += 1;
-            String super_klik_waarden_niewen = super_klik_waarden.ToString();
-         
+            //Omega getal
+            String omega_klik = omega.Text;
+            int omega_klik_waarden = Int32.Parse(omega_klik);
             if (normaal_klik_getal >= 10)
             {
                 //Een super punt en reset de normaal_waarde naar nul
@@ -39,6 +39,8 @@ namespace de_klik_game
                 normaal_klik_getal = 0;
                 normaal.Text = normaal_klik_getal.ToString();
                 //Voeg een punt bij
+                super_klik_waarden += 1;
+                String super_klik_waarden_niewen = super_klik_waarden.ToString();
                 super.Text = super_klik_waarden_niewen;
 
 
@@ -49,6 +51,12 @@ namespace de_klik_game
                 //Super punt word 0
                 super_klik_waarden = 0;
                 super.Text = super_klik_waarden.ToString();
+                //Plus 1 omega punt
+                omega_klik_waarden += 1;
+                String omega_klik_waarden_string_versie = omega_klik_waarden.ToString();
+                omega.Text = omega_klik_waarden_string_versie;
+
+
             }
             else
             {
