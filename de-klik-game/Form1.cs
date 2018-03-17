@@ -21,7 +21,8 @@ namespace de_klik_game
         private void button1_Click(object sender, EventArgs e)
         {
             String normaal_klik = normaal.Text;
-           
+            int normaal_klik_getal = Int32.Parse(normaal_klik);
+            
         }
     }
 }
