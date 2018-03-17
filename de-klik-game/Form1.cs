@@ -42,7 +42,15 @@ namespace de_klik_game
                 super.Text = super_klik_waarden_niewen;
 
 
-            } else
+            }
+            else if(super_klik_waarden >= 10)
+            {
+                //De super punt word 0 en er komt een omega punt bij
+                //Super punt word 0
+                super_klik_waarden = 0;
+                super.Text = super_klik_waarden.ToString();
+            }
+            else
             {
                 //Als er niks aan de hand is voer dan een punt bij normaal
                 normaal.Text = normaal_klik_nieuwe_waarden;
